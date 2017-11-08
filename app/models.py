@@ -15,6 +15,8 @@ class Vestibular(models.Model):
     
  class Candidado(models.Model):
     nome = models.CharField(max_length=200)
-    RG = models.CharField(max_length=13)
-    CPF = models.CharField(max_length=13)
+    rg = models.CharField(max_length=13)
+    cpf = models.CharField(max_length=13)
+    endereco = models.CharField(max_length=50)
+    telefone = models.CharField(max_length=10)
 
