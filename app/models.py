@@ -13,6 +13,8 @@ class Curso(models.Model):
 class Vestibular(models.Model):
     nome = models.CharField(max_length=200)
     
- class Candidado():
-    
+ class Candidado(models.Model):
+    nome = models.CharField(max_length=200)
+    RG = models.CharField(max_length=13)
+    CPF = models.CharField(max_length=13)
 
